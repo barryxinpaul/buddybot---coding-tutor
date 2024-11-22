@@ -12,7 +12,18 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        custom: ["menlo", "monospace"],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.no-scrollbar::-webkit-scrollbar': {
+          display: 'none', /* Chrome, Safari, and Edge */
+        },
+      });
+    },
+  ],
 } satisfies Config;
