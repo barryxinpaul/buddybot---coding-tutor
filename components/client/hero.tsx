@@ -132,9 +132,8 @@ const Hero = () => {
             </div>
           </div>
         ))}
-      </div>
-      <form
-        className="w-full max-w-[1280px] mx-auto p-2 bg-[#1e1e1e] flex flex-row gap-2"
+        <form
+        className="w-full max-w-[1280px] mx-auto  bg-[#1e1e1e] flex flex-row gap-2"
         onSubmit={handleSubmit}
       >
         <p className='my-auto text-[#e6e6e6] whitespace-nowrap font-custom'>(base) C:\user\guest %</p>
@@ -151,6 +150,7 @@ const Hero = () => {
           }}
         ></textarea>
       </form>
+      </div>
     </div>
   );
 };
